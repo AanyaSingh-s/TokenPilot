@@ -1,0 +1,12 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: tokenpilot-backend
+
+tokenpilot:
+  llm:
+    api-key: ${LLM_API_KEY:}
+    base-url: ${LLM_API_BASE_URL:https://api.openai.com/v1}
+    model: ${LLM_MODEL:gpt-4o-mini}
